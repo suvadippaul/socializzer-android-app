@@ -42,6 +42,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.*;
+import android.content.Intent;
 
 import com.facebook.*;
 import com.facebook.internal.Utility;
@@ -926,24 +927,10 @@ public class SelectionFragment extends Fragment {
             setPhotoText();
             return true;
         }
-        //TODO Add tabs here
+        
         private void showPhotoChoice() {
-            AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-            CharSequence camera = getResources().getString(R.string.action_photo_camera);
-            CharSequence gallery = getResources().getString(R.string.action_photo_gallery);
-            builder.setCancelable(true).
-                    setItems(new CharSequence[]{camera, gallery},
-                            new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialogInterface, int i) {
-                                    if (i == CAMERA) {
-                                        startCameraActivity();
-                                    } else if (i == GALLERY) {
-                                        startGalleryActivity();
-                                    }
-                                }
-                            });
-            builder.show();
+            Intent eventMaker=new Intent(SelectionFragment.this.getActivity(), Events.class);
+            startActivity(eventMaker);
         }
 
         private void setPhotoText() {

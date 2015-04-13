@@ -24,7 +24,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="9"
+        android:minSdkVersion="13"
         android:targetSdkVersion="21" />
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -34,6 +34,11 @@
 
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
 
     <application
         android:name="com.facebook.scrumptious.ScrumptiousApplication"
@@ -70,6 +75,15 @@
             android:name="com.facebook.FacebookContentProvider"
             android:authorities="com.facebook.app.FacebookContentProvider233936543368280"
             android:exported="true" />
+
+        <activity
+            android:name="com.facebook.scrumptious.Events"
+            android:label="@string/title_activity_events"
+            android:parentActivityName="com.facebook.scrumptious.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.facebook.scrumptious.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

@@ -93,8 +93,9 @@ int drawable profile_default_icon 0x7f020022
 int drawable right_paper 0x7f020023
 int drawable right_rock 0x7f020024
 int drawable right_scissors 0x7f020025
-int drawable usersettings_facebook_logo 0x7f020026
-int drawable usersettings_fragment_background_gradient 0x7f020027
+int drawable socializzer_logo 0x7f020026
+int drawable usersettings_facebook_logo 0x7f020027
+int drawable usersettings_fragment_background_gradient 0x7f020028
 int id again_button 0x7f080033
 int id automatic 0x7f08000c
 int id bottom 0x7f080006

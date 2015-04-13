@@ -402,7 +402,8 @@ int drawable messenger_button_blue_bg_selector 0x7f02004a
 int drawable messenger_button_send_round_shadow 0x7f02004b
 int drawable messenger_button_white_bg_round 0x7f02004c
 int drawable messenger_button_white_bg_selector 0x7f02004d
-int drawable tree 0x7f02004e
+int drawable socializzer_logo 0x7f02004e
+int drawable tree 0x7f02004f
 int id action_bar 0x7f080042
 int id action_bar_activity_content 0x7f080000
 int id action_bar_container 0x7f080041

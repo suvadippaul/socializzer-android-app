@@ -219,8 +219,9 @@ containing a value of this type.
         public static final int right_paper=0x7f020023;
         public static final int right_rock=0x7f020024;
         public static final int right_scissors=0x7f020025;
-        public static final int usersettings_facebook_logo=0x7f020026;
-        public static final int usersettings_fragment_background_gradient=0x7f020027;
+        public static final int socializzer_logo=0x7f020026;
+        public static final int usersettings_facebook_logo=0x7f020027;
+        public static final int usersettings_fragment_background_gradient=0x7f020028;
     }
     public static final class id {
         public static final int again_button=0x7f080033;

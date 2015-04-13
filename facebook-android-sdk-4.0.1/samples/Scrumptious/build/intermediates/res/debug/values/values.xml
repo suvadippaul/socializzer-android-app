@@ -56,6 +56,10 @@
     <declare-styleable name="picker_fragment"><attr format="boolean" name="show_pictures"/><attr format="string" name="extra_fields"/><attr format="boolean" name="show_title_bar"/><attr format="string" name="title_text"/><attr format="string" name="done_button_text"/><attr format="reference" name="title_bar_background"/><attr format="reference" name="done_button_background"/></declare-styleable>
     <declare-styleable name="picker_friend_picker_fragment"><attr format="boolean" name="multi_select"/></declare-styleable>
     <declare-styleable name="picker_place_picker_fragment"><attr format="integer" name="radius_in_meters"/><attr format="integer" name="results_limit"/><attr format="string" name="search_text"/><attr format="boolean" name="show_search_box"/></declare-styleable>
+    <!-- From: file:/home/shreyas/AndroidStudioProjects/facebook-android-sdk-4.0.1/samples/Scrumptious/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
     <!-- From: file:/home/shreyas/AndroidStudioProjects/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/exploded-aar/com.facebook.android/facebook/4.0.1/res/values/values.xml -->
     <eat-comment/>
     <dimen name="com_facebook_likeboxcountview_border_radius">3dp</dimen>
@@ -103,6 +107,7 @@
     <string name="action_photo_default">Take one</string>
     <string name="action_photo_gallery">Choose Existing</string>
     <string name="action_photo_ready">Ready</string>
+    <string name="action_settings">Settings</string>
     <string name="announce">Announce</string>
     <string name="app_id">233936543368280</string>
     <string name="app_name">Socializzer</string>
@@ -137,6 +142,7 @@
     <string name="exception">Exception: %1$s</string>
     <string name="food_image_content_description">Food image</string>
     <string name="get_started">To get started, login using Facebook</string>
+    <string name="hello_world">Hello world!</string>
     <string name="login">Login</string>
     <string name="logo_content_description">logo</string>
     <string name="message">Send with Messenger</string>
@@ -165,6 +171,10 @@
     <string name="settings">Settings</string>
     <string name="single_user_selected">%1$s</string>
     <string name="skip_login">continue as a guest</string>
+    <string name="title_activity_events">Events</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
     <string name="two_users_selected">%1$s and %2$s</string>
     <string name="usersettings_fragment_log_in_button">Log in…</string>
     <string name="usersettings_fragment_logged_in">Logged in</string>
