@@ -1,0 +1,7 @@
+/home/shreyas/AndroidStudioProjects/facebook-android-sdk-4.0.1/samples/SwitchUserSample/build/intermediates/classes/debug
+/home/shreyas/AndroidStudioProjects/facebook-android-sdk-4.0.1/samples/SwitchUserSample/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-cea0cf41703c0a69de929b01fca15b85a7f76f35.jar
+/home/shreyas/AndroidStudioProjects/facebook-android-sdk-4.0.1/samples/SwitchUserSample/build/intermediates/pre-dexed/debug/bolts-android-1.1.4-f67e3b6866082d58270a5bbfb2898d0e847413eb.jar
+/home/shreyas/AndroidStudioProjects/facebook-android-sdk-4.0.1/samples/SwitchUserSample/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-611ed30c6230f2b9fe652c2c328935da9df2fb03.jar
+/home/shreyas/AndroidStudioProjects/facebook-android-sdk-4.0.1/samples/SwitchUserSample/build/intermediates/pre-dexed/debug/classes-13b4e3d34a9b9589867953391f58a0404d6dc844.jar
+/home/shreyas/AndroidStudioProjects/facebook-android-sdk-4.0.1/samples/SwitchUserSample/build/intermediates/pre-dexed/debug/classes-e51d14118f87cea0a9ffa6395289f3b656eb194d.jar
+/home/shreyas/AndroidStudioProjects/facebook-android-sdk-4.0.1/samples/SwitchUserSample/build/intermediates/pre-dexed/debug/classes-1e640106c6e0ec1e34b3f71a8d81566f7c818a22.jar

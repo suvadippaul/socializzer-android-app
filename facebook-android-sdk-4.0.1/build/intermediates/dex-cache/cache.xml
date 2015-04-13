@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/shreyas/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.1.4/129874135e6081269ace2312092031558865de12/bolts-android-1.1.4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="129874135e6081269ace2312092031558865de12">
+        <dex dex="/home/shreyas/AndroidStudioProjects/facebook-android-sdk-4.0.1/samples/SwitchUserSample/build/intermediates/pre-dexed/debug/bolts-android-1.1.4-f67e3b6866082d58270a5bbfb2898d0e847413eb.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/AndroidStudioProjects/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/home/shreyas/AndroidStudioProjects/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/classes-2440cc3e61979b8070e869033455c3ebd9b64301.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/AndroidStudioProjects/facebook-android-sdk-4.0.1/samples/SwitchUserSample/build/intermediates/exploded-aar/com.facebook.android/facebook/4.0.1/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="179636523ded3c74f9cc72c8ef08b40a3bf6067f">
+        <dex dex="/home/shreyas/AndroidStudioProjects/facebook-android-sdk-4.0.1/samples/SwitchUserSample/build/intermediates/pre-dexed/debug/classes-e51d14118f87cea0a9ffa6395289f3b656eb194d.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/AndroidStudioProjects/facebook-android-sdk-4.0.1/samples/SwitchUserSample/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/home/shreyas/AndroidStudioProjects/facebook-android-sdk-4.0.1/samples/SwitchUserSample/build/intermediates/pre-dexed/debug/classes-1e640106c6e0ec1e34b3f71a8d81566f7c818a22.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/AndroidStudioProjects/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/exploded-aar/com.facebook.android/facebook/4.0.1/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="179636523ded3c74f9cc72c8ef08b40a3bf6067f">
+        <dex dex="/home/shreyas/AndroidStudioProjects/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/classes-49ef3735f4e0b458363a7ce2d7dd5e40277ae4bc.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/AndroidStudioProjects/facebook-android-sdk-4.0.1/samples/SwitchUserSample/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/home/shreyas/AndroidStudioProjects/facebook-android-sdk-4.0.1/samples/SwitchUserSample/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-611ed30c6230f2b9fe652c2c328935da9df2fb03.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/AndroidStudioProjects/facebook-android-sdk-4.0.1/samples/SwitchUserSample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/home/shreyas/AndroidStudioProjects/facebook-android-sdk-4.0.1/samples/SwitchUserSample/build/intermediates/pre-dexed/debug/classes-13b4e3d34a9b9589867953391f58a0404d6dc844.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/AndroidStudioProjects/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/home/shreyas/AndroidStudioProjects/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-05bc4f6d13c017be37e553d982784bba71324c9e.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/Downloads/android-sdk-linux/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/home/shreyas/AndroidStudioProjects/facebook-android-sdk-4.0.1/samples/SwitchUserSample/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-cea0cf41703c0a69de929b01fca15b85a7f76f35.jar" />
+    </item>
+
+</items>
