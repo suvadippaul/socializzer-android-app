@@ -27,4 +27,4 @@
           android:title="@string/menu_item_clear_slot"
           app:showAsAction="always" />
 </menu>
-<!-- From: file:/home/suvadip/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/SwitchUserSample/res/menu/context_settings.xml -->
+<!-- From: file:/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/SwitchUserSample/res/menu/context_settings.xml -->

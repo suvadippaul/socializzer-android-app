@@ -3,4 +3,4 @@
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
         android:orderInCategory="100" android:showAsAction="never" />
 </menu>
-<!-- From: file:/home/suvadip/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/res/menu/menu_events.xml -->
+<!-- From: file:/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/res/menu/menu_events.xml -->

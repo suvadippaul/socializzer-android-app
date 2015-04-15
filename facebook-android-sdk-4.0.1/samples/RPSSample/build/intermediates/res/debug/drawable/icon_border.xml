@@ -25,4 +25,4 @@
     <padding android:bottom="2dp" android:left="2dp" android:right="2dp" android:top="2dp" />
     <stroke android:width="2px" android:color="@color/text_color" />
 </shape>
-<!-- From: file:/home/suvadip/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/RPSSample/res/drawable/icon_border.xml -->
+<!-- From: file:/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/RPSSample/res/drawable/icon_border.xml -->

@@ -189,6 +189,7 @@ public class SelectionFragment extends Fragment {
                     activity.showSettingsFragment();
                 } else {
                     activity.showSplashFragment();
+
                 }
             }
         });
@@ -798,6 +799,7 @@ public class SelectionFragment extends Fragment {
                     requestCode);
         }
 
+        //TODO add map
         @Override
         protected View.OnClickListener getOnClickListener() {
             return new View.OnClickListener() {
@@ -807,6 +809,8 @@ public class SelectionFragment extends Fragment {
                         startPickerActivity(PickerActivity.PLACE_PICKER, getRequestCode());
                     } else {
                         activity.showSplashFragment();
+                        Intent mapMaker=new Intent(SelectionFragment.this.getActivity(),MapsActivity.class);
+                        startActivity(mapMaker);
                     }
                 }
             };
