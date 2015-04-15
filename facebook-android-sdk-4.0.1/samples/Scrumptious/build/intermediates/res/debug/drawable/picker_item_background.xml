@@ -28,4 +28,4 @@
     <item android:state_focused="true"                                                             android:drawable="@drawable/picker_list_focused" />
     <item                                                                                          android:drawable="@android:color/transparent" />
 </selector>
-<!-- From: file:/home/shreyas/AndroidStudioProjects/facebook-android-sdk-4.0.1/samples/Scrumptious/res/drawable/picker_item_background.xml -->
+<!-- From: file:/home/suvadip/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/res/drawable/picker_item_background.xml -->

@@ -28,4 +28,4 @@
             android:title="@string/menu_item_switch_user"
             app:showAsAction="always"/>
 </menu>
-<!-- From: file:/home/shreyas/AndroidStudioProjects/facebook-android-sdk-4.0.1/samples/SwitchUserSample/res/menu/options_profile.xml -->
+<!-- From: file:/home/suvadip/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/SwitchUserSample/res/menu/options_profile.xml -->
