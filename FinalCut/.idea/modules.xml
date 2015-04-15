@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FinalCut.iml" filepath="$PROJECT_DIR$/FinalCut.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FinalCut/FinalCut-FinalCut.iml" filepath="$PROJECT_DIR$/FinalCut/FinalCut-FinalCut.iml" />
+      <module fileurl="file://$PROJECT_DIR$/samples/Scrumptious/Scrumptious.iml" filepath="$PROJECT_DIR$/samples/Scrumptious/Scrumptious.iml" />
+      <module fileurl="file://$PROJECT_DIR$/facebook/facebook.iml" filepath="$PROJECT_DIR$/facebook/facebook.iml" />
+      <module fileurl="file://$PROJECT_DIR$/facebook/junitTests/junitTests.iml" filepath="$PROJECT_DIR$/facebook/junitTests/junitTests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/facebook/tests/tests.iml" filepath="$PROJECT_DIR$/facebook/tests/tests.iml" />
+    </modules>
+  </component>
+</project>
+
