@@ -49,4 +49,4 @@
             android:background="@drawable/icon_border"
             style="@style/again_button_style" />
 </LinearLayout>
-<!-- From: file:/home/shreyas/AndroidStudioProjects/facebook-android-sdk-4.0.1/samples/RPSSample/res/layout/content_fragment.xml -->
+<!-- From: file:/home/suvadip/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/RPSSample/res/layout/content_fragment.xml -->

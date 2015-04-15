@@ -1,8 +1,8 @@
-/home/shreyas/AndroidStudioProjects/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/classes/debug
-/home/shreyas/AndroidStudioProjects/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-b8d6ef4f1f741a9fb0113e3325309ee919309e6a.jar
-/home/shreyas/AndroidStudioProjects/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-00cd1f9797fde18c56efa6b4342725b972908c20.jar
-/home/shreyas/AndroidStudioProjects/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/classes-694c2c81491b3c5e5d6ffb9e08e76100d279ad4c.jar
-/home/shreyas/AndroidStudioProjects/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/bolts-android-1.1.4-f67e3b6866082d58270a5bbfb2898d0e847413eb.jar
-/home/shreyas/AndroidStudioProjects/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-8430990c634b8c49329f851f1cf5667c2acf99e2.jar
-/home/shreyas/AndroidStudioProjects/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/classes-49ef3735f4e0b458363a7ce2d7dd5e40277ae4bc.jar
-/home/shreyas/AndroidStudioProjects/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/classes-1557b45bb65837e7cf72c21bfdbcefa92f85dce4.jar
+/home/suvadip/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/classes/debug
+/home/suvadip/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-1a65fabfe4e337e7d0e71dc0794d6333b82b7d85.jar
+/home/suvadip/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-02d72e1d394bb75df3c5cc7637b8e071a83a7909.jar
+/home/suvadip/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/classes-1515738152facf30e42e005b9be50fd1ec20c370.jar
+/home/suvadip/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/bolts-android-1.1.4-f7ea6152a463536077f0858b210467dd30956f4d.jar
+/home/suvadip/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-f843bd078d5197b08c38fceee143149faa50649b.jar
+/home/suvadip/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/classes-c6e04667deae1653275411c4114ecf8c15519985.jar
+/home/suvadip/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/classes-25feea817ea577af6f666211db90b9b017a8b21a.jar
