@@ -2,53 +2,193 @@
 <items version="2" >
 
     <item
-        jar="/home/suvadip/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
+        jar="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.0.0/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
-        <dex dex="/home/suvadip/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-f843bd078d5197b08c38fceee143149faa50649b.jar" />
+        sha1="3c0b099f9de16b265ecd6122fcb603e7d0d29f90">
+        <dex dex="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/classes-984f37387df4e492a0c034470c9dc968e53bde58.jar" />
     </item>
     <item
-        jar="/home/suvadip/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/exploded-aar/com.facebook.android/facebook/4.0.1/classes.jar"
+        jar="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.0.0/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="8473ed40a7cc73a21042e2724e83b5dd39908edb">
-        <dex dex="/home/suvadip/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/classes-c6e04667deae1653275411c4114ecf8c15519985.jar" />
+        sha1="c976518693e89ad44fbfccfc654941eaec198d08">
+        <dex dex="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/classes-96a3d860e6822f1d99b2cef61558b381d60b0257.jar" />
     </item>
     <item
-        jar="/home/suvadip/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
-        <dex dex="/home/suvadip/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/classes-25feea817ea577af6f666211db90b9b017a8b21a.jar" />
-    </item>
-    <item
-        jar="/home/suvadip/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/exploded-aar/com.android.support/support-v13/22.0.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="7f9cca1caa023a880b00c382bcc5c90245ae4895">
-        <dex dex="/home/suvadip/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/classes-1515738152facf30e42e005b9be50fd1ec20c370.jar" />
-    </item>
-    <item
-        jar="/home/suvadip/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.1.4/129874135e6081269ace2312092031558865de12/bolts-android-1.1.4.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="129874135e6081269ace2312092031558865de12">
-        <dex dex="/home/suvadip/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/bolts-android-1.1.4-f7ea6152a463536077f0858b210467dd30956f4d.jar" />
-    </item>
-    <item
-        jar="/home/suvadip/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
+        jar="/home/shreyas/Downloads/android-sdk-linux/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
-        <dex dex="/home/suvadip/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-02d72e1d394bb75df3c5cc7637b8e071a83a7909.jar" />
+        <dex dex="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-00cd1f9797fde18c56efa6b4342725b972908c20.jar" />
     </item>
     <item
-        jar="/home/suvadip/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/exploded-aar/com.android.support/support-v13/22.0.0/libs/internal_impl-22.0.0.jar"
+        jar="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/exploded-aar/com.facebook.android/facebook/4.0.1/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a540984918c7ae975ec905d5ea7a17bf016e511f">
+        <dex dex="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/classes-b3e921ad8306af3e0b48c9493bf861f6d3372e4f.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/classes-37532217977832de24dbc15e2dca64c82d471340.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e3d791b42eaa90416cd0b2d2e608092794a3baa4">
+        <dex dex="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/classes-8e28552e8ca9fc20df43aa8eae318f88efc1f5fe.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.1.4/129874135e6081269ace2312092031558865de12/bolts-android-1.1.4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="129874135e6081269ace2312092031558865de12">
+        <dex dex="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/bolts-android-1.1.4-f67e3b6866082d58270a5bbfb2898d0e847413eb.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3033cc3a2c68dff3e5b646d6d084bdbdf7d00b25">
+        <dex dex="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/classes-8b31b97c57dc84e87258e6fbec8b26896f10aeca.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4cd0b093824b3228fffc21ea369b98d0b1db6566">
+        <dex dex="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/classes-bcae667904c52b346a1e10298426e6f78075e557.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9224bc4c54ba95147c7eabd874573763c07cb6be">
+        <dex dex="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/classes-55c75853515de499164b1ca8538a83c43f601d04.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="41b3870cbe5fa546d8095b5b89d42cb69f3dd175">
+        <dex dex="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/classes-937db0d97433e8d5ca0229096a444f614aa181e7.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="fb04b12526b0073c7fb1ebb70c5842d82ee95596">
+        <dex dex="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/classes-e1bff09ec9ec42b1cd11ce9273ca35a72fe8c6f3.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a96b762bde4139de855735f175ec4d17dca55a6d">
+        <dex dex="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/classes-ee90faa4dfd6461c2d5697cfc7c873d2474b838d.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a08d65794b844d8e7540bf9a33859bf3b2482d7f">
+        <dex dex="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/classes-a03bee2bd055417f63e1ea79fe2a8229697f934f.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="0e8228b4bc69c6a2c8d7c18498a77e53417d2574">
+        <dex dex="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/classes-67307767798360f228911659c73231cc8a5fed1d.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="7ff613bf78ab057293892fdbd4169eda899c89b9">
+        <dex dex="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/classes-995d2ebfe5959e115877f813d98725c449baefb4.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1c5a76debf0c2857ccad422c4a80ed785982f8df">
+        <dex dex="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/classes-d395b943dcead61d7bb70c7acb86b7e759694771.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="73ccb92b70112f2e463e415ef8d7275de7da6516">
+        <dex dex="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/classes-1b33862e7003c35f0bd2df35d4bf262d44f5b598.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4c93d99d454c975536bbe3b42283eee847f03ea3">
+        <dex dex="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/classes-657027fdeb15067e5d09ec25879d14719ce5415e.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/classes-3297b7c00e5519c04814750cc3c8873184d03a6a.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/exploded-aar/com.android.support/support-v13/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="7f9cca1caa023a880b00c382bcc5c90245ae4895">
+        <dex dex="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/classes-226c66b60fe46271e93d6718e82d5f407b53dfc3.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-ad0c49bd43af3cac478dd1b08620a6023720ef2a.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/exploded-aar/com.android.support/support-v13/22.0.0/libs/internal_impl-22.0.0.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="def3eff2b7b4774d96ae15b07b3fc0111edbfe24">
-        <dex dex="/home/suvadip/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-1a65fabfe4e337e7d0e71dc0794d6333b82b7d85.jar" />
+        <dex dex="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-8ee7ff48359b71ad9ff03ce046f8d6c95e7f3d6b.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="29fd6d3794b71491c2789708cd8d03c71feb8954">
+        <dex dex="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/classes-25f1ff72f61c4d9d948d9e44d4d559c6932aa7fc.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="055783146ba9654a725442563be78cad303aad1f">
+        <dex dex="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/classes-1f758c6cf2429bb87f931c906857d3994cc206f0.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="17f8750d5c0749e44dd7c54aa390d9c937803825">
+        <dex dex="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/classes-e7b54d4735c7a7515095d4c2352b95b3a9506b93.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ef5f051e7308febe289dc93c67c5f32785b4260a">
+        <dex dex="/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/build/intermediates/pre-dexed/debug/classes-118c0566f52293b83ffa7cb63b7a5f8ac3ca3326.jar" />
     </item>
 
 </items>

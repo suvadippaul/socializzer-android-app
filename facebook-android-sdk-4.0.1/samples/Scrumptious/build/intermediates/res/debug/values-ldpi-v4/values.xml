@@ -3,4 +3,9 @@
     <!-- From: file:/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/res/values-ldpi/dimens.xml -->
     <eat-comment/>
     <dimen name="picker_divider_width">1px</dimen>
+    <!-- From: file:/home/shreyas/Github/socializzer-android-app/facebook-android-sdk-4.0.1/samples/Scrumptious/res/values-ldpi/google_maps_api.xml -->
+    <eat-comment/>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyCVdPdL87W-k0mTzE0kAN3UuYDBv-fYRSE
+    </string>
 </resources>

@@ -805,13 +805,13 @@ public class SelectionFragment extends Fragment {
             return new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent mapCaller=new Intent(SelectionFragment.this.getActivity(),MapsActivity.class);
-                    startActivity(mapCaller);
-                    /*if (AccessToken.getCurrentAccessToken() != null) {
+                    //Intent mapCaller=new Intent(SelectionFragment.this.getActivity(),MapsActivity.class);
+                    //startActivity(mapCaller);
+                    if (AccessToken.getCurrentAccessToken() != null) {
                         startPickerActivity(PickerActivity.PLACE_PICKER, getRequestCode());
                     } else {
                         activity.showSplashFragment();
-                    }*/
+                    }
                 }
             };
         }
@@ -892,9 +892,12 @@ public class SelectionFragment extends Fragment {
         @Override
         protected View.OnClickListener getOnClickListener() {
             return new View.OnClickListener() {
+                //TODO call tabs
                 @Override
                 public void onClick(View view) {
-                    showPhotoChoice();
+                    Intent eventMaker=new Intent(SelectionFragment.this.getActivity(), Events.class);
+                    startActivity(eventMaker);
+                    //showPhotoChoice();
                 }
             };
         }
