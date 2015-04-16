@@ -67,4 +67,4 @@
             android:layout_marginRight="10dip"
             android:layout_toLeftOf="@id/com_facebook_picker_divider"/>
 </RelativeLayout>
-<!-- From: file:/home/suvadip/AndroidStudioProjects/FinalCut/FinalCut/Scrumptious/res/layout/picker_title_bar.xml -->
+<!-- From: file:/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/res/layout/picker_title_bar.xml -->

@@ -798,16 +798,20 @@ public class SelectionFragment extends Fragment {
                     requestCode);
         }
 
+        //TODO call to MapsActivity
         @Override
         protected View.OnClickListener getOnClickListener() {
+
             return new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if (AccessToken.getCurrentAccessToken() != null) {
+                    Intent mapCaller=new Intent(SelectionFragment.this.getActivity(),MapsActivity.class);
+                    startActivity(mapCaller);
+                    /*if (AccessToken.getCurrentAccessToken() != null) {
                         startPickerActivity(PickerActivity.PLACE_PICKER, getRequestCode());
                     } else {
                         activity.showSplashFragment();
-                    }
+                    }*/
                 }
             };
         }

@@ -26,4 +26,4 @@
     android:layout_height="50dip"
     android:layout_gravity="center_vertical"
     android:src="@drawable/profile_default_icon" />
-<!-- From: file:/home/suvadip/AndroidStudioProjects/FinalCut/FinalCut/Scrumptious/res/layout/picker_image.xml -->
+<!-- From: file:/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/res/layout/picker_image.xml -->
