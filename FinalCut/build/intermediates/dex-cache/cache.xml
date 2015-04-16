@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/suvadip/AndroidStudioProjects/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="/home/suvadip/AndroidStudioProjects/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-1060869df2160c5345f6dea30e858792cedff481.jar" />
+    </item>
+    <item
+        jar="/home/suvadip/AndroidStudioProjects/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.facebook.android/facebook/4.0.1/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1b00fee8dca1b719ccc7b43a5f23470c7b57cc19">
+        <dex dex="/home/suvadip/AndroidStudioProjects/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-ef28dc5cfa5b041bdecf960f98f3369a87cdcf67.jar" />
+    </item>
+    <item
+        jar="/home/suvadip/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.1.4/129874135e6081269ace2312092031558865de12/bolts-android-1.1.4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="129874135e6081269ace2312092031558865de12">
+        <dex dex="/home/suvadip/AndroidStudioProjects/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/bolts-android-1.1.4-f7ea6152a463536077f0858b210467dd30956f4d.jar" />
+    </item>
+    <item
+        jar="/home/suvadip/AndroidStudioProjects/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.android.support/support-v13/22.0.0/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="def3eff2b7b4774d96ae15b07b3fc0111edbfe24">
+        <dex dex="/home/suvadip/AndroidStudioProjects/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-7e00343705f798b4f46f908ad8101db3052667c3.jar" />
+    </item>
+    <item
+        jar="/home/suvadip/AndroidStudioProjects/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.android.support/support-v13/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="7f9cca1caa023a880b00c382bcc5c90245ae4895">
+        <dex dex="/home/suvadip/AndroidStudioProjects/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-b51e276084678787ba1a6bcacb52c3a9e451c6f7.jar" />
+    </item>
+    <item
+        jar="/home/suvadip/AndroidStudioProjects/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/home/suvadip/AndroidStudioProjects/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-64cb91a9708bea1ade30d699d1eb39c43a24fe0d.jar" />
+    </item>
+    <item
+        jar="/home/suvadip/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="/home/suvadip/AndroidStudioProjects/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-02d72e1d394bb75df3c5cc7637b8e071a83a7909.jar" />
+    </item>
+
+</items>
