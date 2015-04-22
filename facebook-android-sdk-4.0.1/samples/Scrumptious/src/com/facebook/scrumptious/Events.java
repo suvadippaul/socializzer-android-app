@@ -10,6 +10,7 @@ import android.app.ActionBar;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Context;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
@@ -35,7 +36,7 @@ public class Events extends Activity implements ActionBar.TabListener {
      * {@link android.support.v13.app.FragmentStatePagerAdapter}.
      */
     SectionsPagerAdapter mSectionsPagerAdapter;
-
+    public Context mContext =this;
     /**
      * The {@link ViewPager} that will host the section contents.
      */
@@ -173,7 +174,7 @@ public class Events extends Activity implements ActionBar.TabListener {
          * The fragment argument representing the section number for this
          * fragment.
          */
-        public ArrayList<String> listItems=new ArrayList<String>();
+        Event[] listItems=new Event[10];
         ArrayAdapter<Event> adapter;
         private static final String ARG_SECTION_NUMBER = "section_number";
 
@@ -215,9 +216,9 @@ public class Events extends Activity implements ActionBar.TabListener {
 
             //setContentView(R.layout.main);
             View rootView = inflater.inflate(R.layout.fragment_events, container, false);
-            //adapter=new ArrayAdapter<Event>(Events.this.getActivity(),
+            //adapter=new ArrayAdapter<Event>(mContext,
             //        android.R.layout.simple_list_item_1,
-            //       listItems);
+            //      listItems);
             //ListView rootView;
             ((ListView) rootView.findViewById(R.id.list_events)).setAdapter(adapter);
 
