@@ -98,6 +98,7 @@
         <item></item>
     </string-array>
     <string name="title_activity_events">Events</string>
+    <string name="title_activity_maps">MapsActivity</string>
 
 
     <string name="title_section1">Section 1</string>

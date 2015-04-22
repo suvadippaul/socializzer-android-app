@@ -1,23 +1,23 @@
 package com.facebook.scrumptious;
 
-import java.util.Locale;
-import java.util.*;
-
-import android.app.Activity;
 import android.app.ActionBar;
+import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
-import android.support.v13.app.FragmentPagerAdapter;
+import android.content.Context;
 import android.os.Bundle;
+import android.support.v13.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
+import java.util.Locale;
 
 
 public class Events extends Activity implements ActionBar.TabListener {
@@ -25,15 +25,15 @@ public class Events extends Activity implements ActionBar.TabListener {
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
      * fragments for each of the sections. We use a
-     * {@link FragmentPagerAdapter} derivative, which will keep every
+     * {@link android.support.v13.app.FragmentPagerAdapter} derivative, which will keep every
      * loaded fragment in memory. If this becomes too memory intensive, it
      * may be best to switch to a
      * {@link android.support.v13.app.FragmentStatePagerAdapter}.
      */
     SectionsPagerAdapter mSectionsPagerAdapter;
-
+    public Context mContext =this;
     /**
-     * The {@link ViewPager} that will host the section contents.
+     * The {@link android.support.v4.view.ViewPager} that will host the section contents.
      */
     ViewPager mViewPager;
 
@@ -116,7 +116,7 @@ public class Events extends Activity implements ActionBar.TabListener {
     }
 
     /**
-     * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
+     * A {@link android.support.v13.app.FragmentPagerAdapter} that returns a fragment corresponding to
      * one of the sections/tabs/pages.
      */
     public class SectionsPagerAdapter extends FragmentPagerAdapter {
@@ -129,7 +129,15 @@ public class Events extends Activity implements ActionBar.TabListener {
         public Fragment getItem(int position) {
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
-            return PlaceholderFragment.newInstance(position + 1);
+            if(position==0)
+            {
+                return PlaceholderFragment.newInstance(position + 1);
+            }
+            else
+            {
+                MapFragment mapFragment=new MapFragment();
+                return mapFragment;
+            }
         }
 
         @Override
@@ -161,28 +169,55 @@ public class Events extends Activity implements ActionBar.TabListener {
          * The fragment argument representing the section number for this
          * fragment.
          */
-         
+        Event[] listItems=new Event[10];
+        ArrayAdapter<Event> adapter;
         private static final String ARG_SECTION_NUMBER = "section_number";
 
         /**
          * Returns a new instance of this fragment for the given section
          * number.
          */
-        public static PlaceholderFragment newInstance(int sectionNumber) {
-            PlaceholderFragment fragment = new PlaceholderFragment();
-            Bundle args = new Bundle();
-            args.putInt(ARG_SECTION_NUMBER, sectionNumber);
-            fragment.setArguments(args);
-            return fragment;
+        public static Fragment newInstance(int sectionNumber) {
+            if(sectionNumber==1)
+            {
+                //Event userEvents[]=new Event[];
+                //TODO populate userEvents from server
+                PlaceholderFragment fragment = new PlaceholderFragment();
+                Bundle args = new Bundle();
+                args.putInt(ARG_SECTION_NUMBER, sectionNumber);
+                fragment.setArguments(args);
+                return fragment;
+            }
+            else
+            {
+                MapFragment mapFragment=new MapFragment();
+                return mapFragment;
+            }
         }
 
         public PlaceholderFragment() {
+            //listItems=userEvents;
+        }
+
+        @Override
+        public void onCreate(Bundle icicle) {
+            super.onCreate(icicle);
+
         }
 
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
+
+            //setContentView(R.layout.main);
             View rootView = inflater.inflate(R.layout.fragment_events, container, false);
+            //adapter=new ArrayAdapter<Event>(mContext,
+            //        android.R.layout.simple_list_item_1,
+            //      listItems);
+            //ListView rootView;
+            //((ListView) rootView.findViewById(R.id.list_events)).setAdapter(adapter);
+
+            //setListAdapter(adapter);
             return rootView;
         }
     }
