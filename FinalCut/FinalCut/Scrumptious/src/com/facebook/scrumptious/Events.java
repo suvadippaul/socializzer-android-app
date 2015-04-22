@@ -1,6 +1,7 @@
 package com.facebook.scrumptious;
 
 import java.util.Locale;
+import java.util.*;
 
 import android.app.Activity;
 import android.app.ActionBar;
@@ -160,6 +161,7 @@ public class Events extends Activity implements ActionBar.TabListener {
          * The fragment argument representing the section number for this
          * fragment.
          */
+         
         private static final String ARG_SECTION_NUMBER = "section_number";
 
         /**
