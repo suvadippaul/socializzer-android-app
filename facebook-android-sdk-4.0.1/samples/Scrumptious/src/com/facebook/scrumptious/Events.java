@@ -1,6 +1,9 @@
 package com.facebook.scrumptious;
 
 import java.util.Locale;
+import java.util.*;
+import java.util.AbstractList;
+import java.util.ArrayList;
 
 import android.app.Activity;
 import android.app.ActionBar;
@@ -17,6 +20,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.ListView;
+import android.widget.ArrayAdapter;
 
 
 public class Events extends Activity implements ActionBar.TabListener {
@@ -168,6 +173,8 @@ public class Events extends Activity implements ActionBar.TabListener {
          * The fragment argument representing the section number for this
          * fragment.
          */
+        public ArrayList<String> listItems=new ArrayList<String>();
+        ArrayAdapter<Event> adapter;
         private static final String ARG_SECTION_NUMBER = "section_number";
 
         /**
@@ -177,6 +184,8 @@ public class Events extends Activity implements ActionBar.TabListener {
         public static Fragment newInstance(int sectionNumber) {
             if(sectionNumber==1)
             {
+                //Event userEvents[]=new Event[];
+                //TODO populate userEvents from server
                 PlaceholderFragment fragment = new PlaceholderFragment();
                 Bundle args = new Bundle();
                 args.putInt(ARG_SECTION_NUMBER, sectionNumber);
@@ -191,12 +200,28 @@ public class Events extends Activity implements ActionBar.TabListener {
         }
 
         public PlaceholderFragment() {
+            //listItems=userEvents;
+        }
+
+        @Override
+        public void onCreate(Bundle icicle) {
+            super.onCreate(icicle);
+
         }
 
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
+
+            //setContentView(R.layout.main);
             View rootView = inflater.inflate(R.layout.fragment_events, container, false);
+            //adapter=new ArrayAdapter<Event>(Events.this.getActivity(),
+            //        android.R.layout.simple_list_item_1,
+            //       listItems);
+            //ListView rootView;
+            ((ListView) rootView.findViewById(R.id.list_events)).setAdapter(adapter);
+
+            //setListAdapter(adapter);
             return rootView;
         }
     }
