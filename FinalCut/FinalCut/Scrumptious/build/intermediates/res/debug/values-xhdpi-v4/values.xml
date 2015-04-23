@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/res/values-xhdpi/dimens.xml -->
+    <!-- From: file:/home/suvadip/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/res/values-xhdpi/dimens.xml -->
     <eat-comment/>
     <dimen name="picker_divider_width">2px</dimen>
-    <!-- From: file:/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/res/values-xhdpi/google_maps_api.xml -->
+    <!-- From: file:/home/suvadip/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/res/values-xhdpi/google_maps_api.xml -->
     <eat-comment/>
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
         AIzaSyCVdPdL87W-k0mTzE0kAN3UuYDBv-fYRSE

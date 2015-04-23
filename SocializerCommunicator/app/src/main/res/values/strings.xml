@@ -1,0 +1,10 @@
+<resources>
+        <string name="app_name">SocializerCommunicator</string>
+        <string name="name">Name</string>
+        <string name="description">Description</string>
+        <string name="retrieve">Retrieve</string>
+        <string name="post">Post</string>
+        <string name="clear">Clear</string>
+        <string name="action_settings">Action Settings</string>
+
+</resources>

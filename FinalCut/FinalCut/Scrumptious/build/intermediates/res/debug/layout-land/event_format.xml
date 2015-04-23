@@ -14,4 +14,4 @@
         android:id="@+id/event_description"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" />
-</LinearLayout><!-- From: file:/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/res/layout-land/event_format.xml -->
+</LinearLayout><!-- From: file:/home/suvadip/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/res/layout-land/event_format.xml -->
