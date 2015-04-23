@@ -20,7 +20,7 @@
 -->
 
 <resources>
-	<style name="Theme.Scrumptious" parent="android:Theme">
+    <style name="Theme.Scrumptious" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>
     </style>
     <color name="usersettings_fragment_connected_text_color">#FFFFFF</color>

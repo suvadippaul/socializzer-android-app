@@ -1,6 +1,7 @@
 package com.facebook.scrumptious;
 
-import android.app.Fragment;
+//import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -59,8 +60,8 @@ public class MapFragment extends Fragment {
 
     @Override
     public void onDestroy() {
-        super.onDestroy();
         mapView.onDestroy();
+        super.onDestroy();
     }
 
     @Override

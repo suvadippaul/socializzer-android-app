@@ -401,6 +401,7 @@ available. Please contact the developer for assistance.</string>
     <string name="exception">Exception: %1$s</string>
     <string name="food_image_content_description">Food image</string>
     <string name="get_started">To get started, login using Facebook</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_world">Hello world!</string>
     <string name="login">Login</string>
     <string name="logo_content_description">logo</string>
@@ -437,9 +438,10 @@ available. Please contact the developer for assistance.</string>
     <!-- From: file:/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/res/values/strings.xml -->
     <eat-comment/>
     <string name="title_activity_events">Events</string>
+    <string name="title_activity_events2">Events2</string>
     <string name="title_activity_maps">MapsActivity</string>
-    <string name="title_section1">Section 1</string>
-    <string name="title_section2">Section 2</string>
+    <string name="title_section1">Events</string>
+    <string name="title_section2">Map</string>
     <string name="title_section3">Section 3</string>
     <string name="two_users_selected">%1$s and %2$s</string>
     <string name="usersettings_fragment_log_in_button">Log in…</string>

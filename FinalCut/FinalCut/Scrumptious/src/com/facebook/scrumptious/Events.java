@@ -1,23 +1,28 @@
 package com.facebook.scrumptious;
 
-import android.app.ActionBar;
+import java.util.Locale;
+import java.util.*;
+import java.util.AbstractList;
+import java.util.ArrayList;
+
 import android.app.Activity;
+import android.app.ActionBar;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Context;
-import android.os.Bundle;
 import android.support.v13.app.FragmentPagerAdapter;
+import android.os.Bundle;
 import android.support.v4.view.ViewPager;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
+import android.widget.TextView;
 import android.widget.ListView;
-
-import java.util.Locale;
+import android.widget.ArrayAdapter;
 
 
 public class Events extends Activity implements ActionBar.TabListener {
@@ -25,7 +30,7 @@ public class Events extends Activity implements ActionBar.TabListener {
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
      * fragments for each of the sections. We use a
-     * {@link android.support.v13.app.FragmentPagerAdapter} derivative, which will keep every
+     * {@link FragmentPagerAdapter} derivative, which will keep every
      * loaded fragment in memory. If this becomes too memory intensive, it
      * may be best to switch to a
      * {@link android.support.v13.app.FragmentStatePagerAdapter}.
@@ -33,7 +38,7 @@ public class Events extends Activity implements ActionBar.TabListener {
     SectionsPagerAdapter mSectionsPagerAdapter;
     public Context mContext =this;
     /**
-     * The {@link android.support.v4.view.ViewPager} that will host the section contents.
+     * The {@link ViewPager} that will host the section contents.
      */
     ViewPager mViewPager;
 
@@ -116,7 +121,7 @@ public class Events extends Activity implements ActionBar.TabListener {
     }
 
     /**
-     * A {@link android.support.v13.app.FragmentPagerAdapter} that returns a fragment corresponding to
+     * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
      * one of the sections/tabs/pages.
      */
     public class SectionsPagerAdapter extends FragmentPagerAdapter {
@@ -129,15 +134,15 @@ public class Events extends Activity implements ActionBar.TabListener {
         public Fragment getItem(int position) {
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
-            if(position==0)
+            //if(position==0)
             {
                 return PlaceholderFragment.newInstance(position + 1);
             }
-            else
+            /*else
             {
                 MapFragment mapFragment=new MapFragment();
                 return mapFragment;
-            }
+            }*/
         }
 
         @Override
@@ -178,7 +183,7 @@ public class Events extends Activity implements ActionBar.TabListener {
          * number.
          */
         public static Fragment newInstance(int sectionNumber) {
-            if(sectionNumber==1)
+            //if(sectionNumber==1)
             {
                 //Event userEvents[]=new Event[];
                 //TODO populate userEvents from server
@@ -188,11 +193,11 @@ public class Events extends Activity implements ActionBar.TabListener {
                 fragment.setArguments(args);
                 return fragment;
             }
-            else
+            /*else
             {
                 MapFragment mapFragment=new MapFragment();
                 return mapFragment;
-            }
+            }*/
         }
 
         public PlaceholderFragment() {
@@ -215,7 +220,7 @@ public class Events extends Activity implements ActionBar.TabListener {
             //        android.R.layout.simple_list_item_1,
             //      listItems);
             //ListView rootView;
-            //((ListView) rootView.findViewById(R.id.list_events)).setAdapter(adapter);
+            ((ListView) rootView.findViewById(R.id.list_events)).setAdapter(adapter);
 
             //setListAdapter(adapter);
             return rootView;

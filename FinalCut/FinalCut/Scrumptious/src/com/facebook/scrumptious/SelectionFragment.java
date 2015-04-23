@@ -41,34 +41,49 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
-import android.widget.*;
-import android.content.Intent;
+import android.widget.ArrayAdapter;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.ListView;
+import android.widget.TextView;
 
-import com.facebook.*;
+import com.facebook.AccessToken;
+import com.facebook.AccessTokenTracker;
+import com.facebook.CallbackManager;
+import com.facebook.FacebookCallback;
+import com.facebook.FacebookException;
+import com.facebook.FacebookGraphResponseException;
+import com.facebook.FacebookRequestError;
+import com.facebook.FacebookSdk;
+import com.facebook.GraphResponse;
 import com.facebook.internal.Utility;
 import com.facebook.login.DefaultAudience;
 import com.facebook.login.LoginManager;
-import com.facebook.share.ShareApi;
+import com.facebook.login.widget.ProfilePictureView;
 import com.facebook.share.Sharer;
-import com.facebook.share.model.ShareContent;
+import com.facebook.share.model.ShareOpenGraphAction;
 import com.facebook.share.model.ShareOpenGraphContent;
 import com.facebook.share.model.ShareOpenGraphObject;
 import com.facebook.share.model.SharePhoto;
-import com.facebook.share.model.ShareOpenGraphAction;
-import com.facebook.share.widget.MessageDialog;
-import com.facebook.share.widget.SendButton;
-import com.facebook.share.widget.ShareButton;
-import com.facebook.login.widget.ProfilePictureView;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.*;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Set;
 import java.util.UUID;
 
 /**
@@ -189,6 +204,7 @@ public class SelectionFragment extends Fragment {
                     activity.showSettingsFragment();
                 } else {
                     activity.showSplashFragment();
+
                 }
             }
         });
@@ -798,19 +814,18 @@ public class SelectionFragment extends Fragment {
                     requestCode);
         }
 
-        //TODO call to MapsActivity
+        //TODO add map
         @Override
         protected View.OnClickListener getOnClickListener() {
-
             return new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    //Intent mapCaller=new Intent(SelectionFragment.this.getActivity(),MapsActivity.class);
-                    //startActivity(mapCaller);
                     if (AccessToken.getCurrentAccessToken() != null) {
                         startPickerActivity(PickerActivity.PLACE_PICKER, getRequestCode());
                     } else {
                         activity.showSplashFragment();
+                        //Intent mapMaker=new Intent(SelectionFragment.this.getActivity(),MapsActivity.class);
+                        //startActivity(mapMaker);
                     }
                 }
             };
@@ -892,12 +907,9 @@ public class SelectionFragment extends Fragment {
         @Override
         protected View.OnClickListener getOnClickListener() {
             return new View.OnClickListener() {
-                //TODO call tabs
                 @Override
                 public void onClick(View view) {
-                    Intent eventMaker=new Intent(SelectionFragment.this.getActivity(), Events.class);
-                    startActivity(eventMaker);
-                    //showPhotoChoice();
+                    showPhotoChoice();
                 }
             };
         }
@@ -936,7 +948,7 @@ public class SelectionFragment extends Fragment {
         }
         
         private void showPhotoChoice() {
-            Intent eventMaker=new Intent(SelectionFragment.this.getActivity(), Events.class);
+            Intent eventMaker=new Intent(SelectionFragment.this.getActivity(), Events2.class);
             startActivity(eventMaker);
         }
 
