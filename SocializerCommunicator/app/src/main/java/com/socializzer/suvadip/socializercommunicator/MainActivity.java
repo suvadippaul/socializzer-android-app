@@ -20,6 +20,7 @@ import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.params.BasicHttpParams;
 import org.apache.http.params.HttpConnectionParams;
 import org.apache.http.params.HttpParams;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import android.app.Activity;
@@ -32,6 +33,7 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.Toast;
+import org.json.JSONArray;
 
 public class MainActivity extends Activity {
 
@@ -100,14 +102,30 @@ public class MainActivity extends Activity {
 
         try {
 
-            JSONObject jso = new JSONObject(response);
+            JSONObject jsonObject = new JSONObject(response);
+            JSONArray eventItemList = new
+                    JSONArray(jsonObject.getString("event"));
 
-            String name = jso.getString("name");
-            String description = jso.getString("description");
+            //---print out the content of the json feed---
+            for (int i = 0; i < eventItemList.length(); i++) {
+                JSONObject eventItem = eventItemList.getJSONObject(i);
 
-            edName.setText(name);
-            edDescription.setText(description);
+                String name = eventItem.getString("postalCode");
+                String description = eventItem.getString("placeName");
+                int type = eventItem.getInt("type");
+                double latitude = eventItem.getDouble("latitude");
+                //now fill array list
 
+            }
+
+    // OLD CODE BELOW FOR SINGLE OBJECT
+//            JSONObject jso = new JSONObject(response);
+//
+//            String name = jso.getString("name");
+//            String description = jso.getString("description");
+//
+//            edName.setText(name);
+//            edDescription.setText(description);
         } catch (Exception e) {
             Log.e(TAG, e.getLocalizedMessage(), e);
         }
