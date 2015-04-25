@@ -17,35 +17,17 @@ public class Event implements Serializable, Comparable<Event> {
 	private int picture;
 	private String name;
 	private String description;
+	private int type;
 	private int subtype;
 	private double latitude;
 	private double longitude;
-	private Time startTime;
-	private Time finishTIme;
-	private Date date;
 
-	public Time getStartTime() {
-		return startTime;
+	public int getType() {
+		return type;
 	}
 
-	public void setStartTime(Time startTime) {
-		this.startTime = startTime;
-	}
-
-	public Time getFinishTIme() {
-		return finishTIme;
-	}
-
-	public void setFinishTIme(Time finishTIme) {
-		this.finishTIme = finishTIme;
-	}
-
-	public Date getDate() {
-		return date;
-	}
-
-	public void setDate(Date date) {
-		this.date = date;
+	public void setType(int type) {
+		this.type = type;
 	}
 
 	public double getRating() {
@@ -143,32 +125,54 @@ public class Event implements Serializable, Comparable<Event> {
 		subtype = 0;
 		latitude = 0;
 		longitude = 0;
-		date = new Date();
-		startTime = new Time(2, 2, 2);
-		finishTIme = new Time(2, 2, 2);
+		type = 0;
 
 	}
 
-	public void getSatisfied( Person person){
-		
-		double lat = latitude-person.getLatitude() ;
-		
-		double lon = longitude-person.getLongitude() ;
-		
-		double dist = lat*lat + lon*lon;
-		double cost = Math.abs(person.getCostMe() - averageCostFor2);
-		tempSatisfactionIndex = 1/dist + 1/cost + rating*100;
-		
+	public void getSatisfied(Person person) {
+
+		int[][] typeConnectivity = { { 2, 1, 0, 1, 0 }, { 1, 2, 1, 2, 0 },
+				{ 0, 1, 2, 0, 1 }, { 1, 2, 0, 2, 1 }, { 0, 0, 1, 1, 2 } };
+
+		int[][][] subtype1 = { { { 2, 1, 0 }, { 1, 2, 1 }, { 0, 1, 2 } },
+				{ { 2, 0, 0 }, { 0, 2, 1 }, { 0, 1, 2 } },
+				{ { 2, 1, 1 }, { 1, 2, 1 }, { 1, 1, 2 } },
+				{ { 2, 1, 0 }, { 1, 2, 0 }, { 0, 0, 2 } },
+				{ { 2, 1, 1 }, { 1, 2, 1 }, { 1, 1, 2 } } };
+		double lat = latitude - person.getLatitude();
+
+		double lon = longitude - person.getLongitude();
+
+		double dist = lat * lat + lon * lon;
+		dist = 1 / dist;
+		if (dist > 25)
+			dist = 25;
+		double cost = person.getCostMe() - averageCostFor2;
+		if (cost > 0)
+			cost = cost / 2;
+		else
+			cost = -cost;
+		tempSatisfactionIndex = dist + 9 / cost + rating * 7.7;
+		tempSatisfactionIndex = tempSatisfactionIndex + 2*typeConnectivity[person.getType()][type];
+		if ( person.getType() == type)
+			tempSatisfactionIndex = tempSatisfactionIndex + subtype1[type][person.getSubtype()][subtype];
+
+
 	}
-	
-	public Event(int eventID, int picture, String name, double latitude,
-			double longitude, double tempSatisfactionIndex) {
+
+	public Event(int eventID, int picture, int type, int subtype, String name,
+			String Description, double latitude, double longitude,
+			double averageCostFor2, double rating) {
 		this.eventID = eventID;
 		this.picture = picture;
+		this.type = type;
+		this.subtype = subtype;
 		this.name = name;
+		this.description = Description;
 		this.latitude = latitude;
 		this.longitude = longitude;
-		this.tempSatisfactionIndex = tempSatisfactionIndex;
+		this.averageCostFor2 = averageCostFor2;
+		this.rating = rating;
 	}
 
 	public String toString() {

@@ -11,7 +11,14 @@ public class Person implements Serializable{
     private double costMe;
     private double latitude;
     private double longitude;
+    private double rating;
     
+	public double getRating() {
+		return rating;
+	}
+	public void setRating(double rating) {
+		this.rating = rating;
+	}
 	public double getCostMe() {
 		return costMe;
 	}
@@ -54,23 +61,23 @@ public class Person implements Serializable{
     
 	public Person(){
 		name = "default";
-		costMe = 0;
+		costMe = 500;
 	    type = 0 ;
 	    subtype = 0 ;
-	    latitude = 0 ;
-	    longitude = 0 ;
+	    latitude = 0.0 ;
+	    longitude = 0.0 ;
+	    rating = 3;
 	}
 	//PLease multiple latitude and longitude by 10,000 before sending it 
-    public Person(String name, String type, String subtype, String latitude, String longitude, String costMe){
+    public Person(String name, String type, String subtype, String latitude, String longitude, String costMe, String rating){
     	this.name = name;
 	    this.type = Integer.parseInt(type) ;
 	    this.subtype = Integer.parseInt(subtype) ;
-	    int tempLatitude = Integer.parseInt(latitude) ;
-	    this.latitude  = ((double) tempLatitude) / ((double) 10000) ;
-	    int tempLongitude= Integer.parseInt(longitude) ;
-	    this.longitude  = ((double) tempLongitude) / ((double) 10000) ;
-	    int tempCostMe= Integer.parseInt(costMe) ;
-	    this.costMe  = ((double) tempCostMe) / ((double) 10000) ;
+	    this.latitude  = Double.parseDouble(latitude);
+	    this.longitude  = Double.parseDouble(longitude);
+	    this.costMe  = Double.parseDouble(costMe);
+	    this.rating = Double.parseDouble(rating);
+
 
     }
 }

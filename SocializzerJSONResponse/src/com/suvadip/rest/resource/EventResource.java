@@ -28,6 +28,8 @@ public class EventResource {
 	    private final static String LATITUDE = "latitude";
 	    private final static String LONGITUDE = "longitude";
 	    private final static String COST_ME = "costMe";
+	    private final static String RATING = "rating";
+
 
 	    private Event event = new Event();
      
@@ -61,8 +63,9 @@ public class EventResource {
         String subtype = "0";
 	    String latitude = "0";
 	    String longitude = "0";
-	    String costMe = "0";
-	    Person person = new Person(name, type, subtype, latitude, longitude, costMe);
+	    String costMe = "400";
+	    String rating = "1";
+	    Person person = new Person(name, type, subtype, latitude, longitude, costMe, rating);
         EventFinder newFind = new EventFinder(person);
         List<Event> lst = newFind.getMeList();
         return lst;
@@ -75,14 +78,21 @@ public class EventResource {
     public List<Event> postEvent( MultivaluedMap<String, String> personParams) {
          
         String name = personParams.getFirst(NAME);
-        String type = personParams.getFirst(SUBTYPE);
+        String type = personParams.getFirst(TYPE);
         String subtype = personParams.getFirst(SUBTYPE);
 	    String latitude = personParams.getFirst(LATITUDE);
 	    String longitude = personParams.getFirst(LONGITUDE); 
-	    String costMe = personParams.getFirst(COST_ME); 
+	    String costMe = personParams.getFirst(COST_ME);
+	    String rating = personParams.getFirst(RATING); 
 
-	    Person person = new Person(name, type, subtype, latitude, longitude, costMe);
-        System.out.println("Storing posted: " + name);
+	    System.out.println(name);
+	    System.out.println(type);
+	    System.out.println(subtype);
+	    System.out.println(latitude);
+	    System.out.println(longitude);
+	    System.out.println(costMe);
+	    System.out.println("POST CALLED");
+	    Person person = new Person(name, type, subtype, latitude, longitude, costMe,rating);
         EventFinder newFind = new EventFinder(person);
         List<Event> lst = newFind.getMeList();
         return lst;
