@@ -24,7 +24,10 @@
     <string name="app_id">958764784157951</string>
     <string name="get_started">To get started, login using Facebook</string>
     <string name="skip_login">continue as a guest</string>
-    <string name="action_eating">Cuisine</string>
+    <string name="action_eating">Type</string>
+    <string name="action_subtype">subtype</string>
+    <string name="action_rating">Minimum Rating</string>
+    <string name="action_cost">Price Range</string>
     <string name="action_location">Pick Location</string>
     <string name="action_people">Pick Friends</string>
     <string name="action_photo">Pick Photo</string>
@@ -73,17 +76,75 @@
     <string name="food_image_content_description">Food image</string>
     <string name="choose_friends">Choose Friends</string>
     <string name="nearby">Nearby</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+    <string name="retrieve">Retrieve</string>
+    <string name="post">Post</string>
+    <string name="clear">Clear</string>
 
     <string-array name="food_types">
-        <item>Cheeseburger</item>
-        <item>Pizza</item>
-        <item>Hotdog</item>
-        <item>Italian</item>
-        <item>French</item>
-        <item>Chinese</item>
-        <item>Sex Machine</item>
-        <item>Indian</item>
-        <item>&lt;Other&gt;</item>
+        <item>Restaurant</item>
+        <item>Club</item>
+        <item>Movie</item>
+        <item>Sport</item>
+        <item>Chilling</item>
+        <item>Surprise</item>
+    </string-array>
+
+    <string-array name="sub_types1">
+        <item>Asian</item>
+        <item>Fast Food</item>
+        <item>Fine Dining</item>
+        <item>Surprise</item>
+    </string-array>
+
+    <string-array name="sub_types2">
+        <item>Dance Floor</item>
+        <item>Bar</item>
+        <item>Why not both?</item>
+        <item>Surprise</item>
+    </string-array>
+
+    <string-array name="sub_types3">
+        <item>Classy</item>
+        <item>Porno</item>
+        <item>Time pass</item>
+        <item>Surprise</item>
+    </string-array>
+
+    <string-array name="sub_types4">
+        <item>Outdoor</item>
+        <item>Indoor</item>
+        <item>Unconventional</item>
+        <item>Surprise</item>
+    </string-array>
+
+    <string-array name="sub_types5">
+        <item>With friends</item>
+        <item>Peace and quiet</item>
+        <item>Socializze!</item>
+        <item>Surprise</item>
+    </string-array>
+
+    <string-array name="cost_types">
+        <item>50</item>
+        <item>100</item>
+        <item>200</item>
+        <item>300</item>
+        <item>500</item>
+        <item>700</item>
+        <item>1000</item>
+        <item>Specify</item>
+    </string-array>
+
+    <string-array name="rating_types">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>Specify</item>
     </string-array>
 
     <string-array name="food_og_urls">
@@ -92,13 +153,38 @@
         <item>https://scrumptious-facebook.parseapp.com/meals/hotdog/</item> <!-- Hotdog -->
         <item>https://scrumptious-facebook.parseapp.com/meals/italian/</item> <!-- Italian -->
         <item>https://scrumptious-facebook.parseapp.com/meals/french/</item> <!-- French -->
-        <item>https://scrumptious-facebook.parseapp.com/meals/chinese/</item> <!-- Chinese -->
-        <item>https://scrumptious-facebook.parseapp.com/meals/thai/</item> <!-- Thai -->
-        <item>https://scrumptious-facebook.parseapp.com/meals/indian/</item> <!-- Indian -->
         <item></item>
     </string-array>
+
+    <string-array name="sub_og_urls">
+        <item>https://scrumptious-facebook.parseapp.com/meals/cheeseburger/</item> <!-- Cheeseburger -->
+        <item>https://scrumptious-facebook.parseapp.com/meals/pizza/</item> <!-- Pizza -->
+        <item>https://scrumptious-facebook.parseapp.com/meals/hotdog/</item> <!-- Hotdog -->
+        <item></item>
+    </string-array>
+
     <string name="title_activity_events">Events</string>
 
+    <string-array name="cost_og_urls">
+        <item>https://scrumptious-facebook.parseapp.com/meals/cheeseburger/</item> <!-- Cheeseburger -->
+        <item>https://scrumptious-facebook.parseapp.com/meals/pizza/</item> <!-- Pizza -->
+        <item>https://scrumptious-facebook.parseapp.com/meals/hotdog/</item> <!-- Hotdog -->
+        <item>https://scrumptious-facebook.parseapp.com/meals/italian/</item> <!-- Italian -->
+        <item>https://scrumptious-facebook.parseapp.com/meals/french/</item> <!-- French -->
+        <item>https://scrumptious-facebook.parseapp.com/meals/french/</item> <!-- French -->
+        <item>https://scrumptious-facebook.parseapp.com/meals/french/</item> <!-- French -->
+        <item></item>
+    </string-array>
+
+    <string-array name="rating_og_urls">
+        <item>https://scrumptious-facebook.parseapp.com/meals/cheeseburger/</item> <!-- Cheeseburger -->
+        <item>https://scrumptious-facebook.parseapp.com/meals/pizza/</item> <!-- Pizza -->
+        <item>https://scrumptious-facebook.parseapp.com/meals/hotdog/</item> <!-- Hotdog -->
+        <item>https://scrumptious-facebook.parseapp.com/meals/italian/</item> <!-- Italian -->
+        <item>https://scrumptious-facebook.parseapp.com/meals/french/</item> <!-- French -->
+        <item>https://scrumptious-facebook.parseapp.com/meals/french/</item> <!-- French -->
+        <item></item>
+    </string-array>
 
     <string name="title_section1">Events</string>
     <string name="title_section2">Map</string>
@@ -112,4 +198,6 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_events2">Events2</string>
+    <string name="title_activity_get_events">getEvents</string>
+    <string name="title_activity_display_event">DisplayEvent</string>
 </resources>

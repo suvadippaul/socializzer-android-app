@@ -84,12 +84,19 @@ import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
 import java.util.UUID;
 
 /**
  * Fragment that represents the main selection screen for Scrumptious.
  */
 public class SelectionFragment extends Fragment {
+
+    public String typeSend;
+    public String subtypeSend;
+    public String costSend;
+    public String ratingSend;
+    ActionListAdapter listAdapter;
 
     private static final String TAG = "SelectionFragment";
     private static final String MEAL_OBJECT_TYPE = "fb_sample_scrumps:meal";
@@ -180,6 +187,101 @@ public class SelectionFragment extends Fragment {
         //messageButton = (SendButton) view.findViewById(R.id.message_button);
         listView = (ListView) view.findViewById(R.id.selection_list);
         photoThumbnail = (ImageView) view.findViewById(R.id.selected_image);
+        photoThumbnail.setImageDrawable(
+                getActivity().getResources().getDrawable(R.drawable.socializzer_logo));
+        photoThumbnail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent eventMaker=new Intent(SelectionFragment.this.getActivity(), Events2.class);
+                Person p=new Person();
+                p.setCostMe(Double.parseDouble(costSend));
+                p.setRating(Double.parseDouble(ratingSend));
+                if(typeSend.charAt(0)=='R')
+                {
+                    p.setType(0);
+                    if(subtypeSend.charAt(0)=='A')
+                    {
+                        p.setSubtype(0);
+                    }
+                    if(subtypeSend.charAt(1)=='a')
+                    {
+                        p.setSubtype(1);
+                    }
+                    if(subtypeSend.charAt(1)=='i')
+                    {
+                        p.setSubtype(2);
+                    }
+                }
+                if(typeSend.charAt(1)=='l')
+                {
+                    p.setType(1);
+                    if(subtypeSend.charAt(0)=='D')
+                    {
+                        p.setSubtype(0);
+                    }
+                    if(subtypeSend.charAt(0)=='B')
+                    {
+                        p.setSubtype(1);
+                    }
+                    if(subtypeSend.charAt(0)=='W')
+                    {
+                        p.setSubtype(2);
+                    }
+                }
+                if(typeSend.charAt(0)=='M')
+                {
+                    p.setType(2);
+                    if(subtypeSend.charAt(0)=='C')
+                    {
+                        p.setSubtype(0);
+                    }
+                    if(subtypeSend.charAt(0)=='P')
+                    {
+                        p.setSubtype(1);
+                    }
+                    if(subtypeSend.charAt(0)=='T')
+                    {
+                        p.setSubtype(2);
+                    }
+                }
+                if(typeSend.charAt(0)=='S')
+                {
+                    p.setType(3);
+                    if(subtypeSend.charAt(0)=='O')
+                    {
+                        p.setSubtype(0);
+                    }
+                    if(subtypeSend.charAt(0)=='I')
+                    {
+                        p.setSubtype(1);
+                    }
+                    if(subtypeSend.charAt(0)=='U')
+                    {
+                        p.setSubtype(2);
+                    }
+                }
+                if(typeSend.charAt(1)=='h')
+                {
+                    p.setType(4);
+                    if(subtypeSend.charAt(0)=='W')
+                    {
+                        p.setSubtype(0);
+                    }
+                    if(subtypeSend.charAt(0)=='P')
+                    {
+                        p.setSubtype(1);
+                    }
+                    if(subtypeSend.charAt(0)=='S')
+                    {
+                        p.setSubtype(2);
+                    }
+                }
+                Bundle pref=new Bundle();
+                pref.putSerializable("person",p);
+                eventMaker.putExtra("pref",pref);
+                startActivity(eventMaker);
+            }
+        });
 
         /*if (MessageDialog.canShow(ShareOpenGraphContent.class)) {
             messageButton.setVisibility(View.VISIBLE);
@@ -309,6 +411,14 @@ public class SelectionFragment extends Fragment {
     /**
      * Resets the view to the initial defaults.
      */
+    public void change()
+    {
+        Log.d("changes",typeSend);
+        listElements.remove(1);
+        listElements.add(1,new PhotoListElement(1));
+        listAdapter.notifyDataSetChanged();
+    }
+
     private void init(Bundle savedInstanceState) {
         //announceButton.setEnabled(false);
         //messageButton.setEnabled(false);
@@ -316,9 +426,10 @@ public class SelectionFragment extends Fragment {
         listElements = new ArrayList<BaseListElement>();
 
         listElements.add(new EatListElement(0));
-        listElements.add(new LocationListElement(1));
+        listElements.add(new PhotoListElement(1));
+        listElements.add(new LocationListElement(3));
         listElements.add(new PeopleListElement(2));
-        listElements.add(new PhotoListElement(3));
+
 
         if (savedInstanceState != null) {
             for (BaseListElement listElement : listElements) {
@@ -326,7 +437,7 @@ public class SelectionFragment extends Fragment {
             }
             //pendingAnnounce = savedInstanceState.getBoolean(PENDING_ANNOUNCE_KEY, false);
         }
-        ActionListAdapter listAdapter = new ActionListAdapter(
+        listAdapter = new ActionListAdapter(
                 getActivity(),
                 R.id.selection_list,
                 listElements);
@@ -615,14 +726,15 @@ public class SelectionFragment extends Fragment {
         private void showMealOptions() {
             String title = getActivity().getResources().getString(R.string.select_meal);
             AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-            builder.setTitle(title).
+            builder.setTitle("Event Type").
                     setCancelable(true).
                     setItems(foodChoices, new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
                             foodChoiceUrl = foodUrls[i];
                             if (foodChoiceUrl.length() == 0) {
-                                getCustomFood();
+                                //getCustomFood();
+                                surpriseMe();
                             } else {
                                 foodChoice = foodChoices[i];
                                 setFoodText();
@@ -631,6 +743,13 @@ public class SelectionFragment extends Fragment {
                         }
                     });
             builder.show();
+        }
+
+        private void surpriseMe()
+        {
+            Random random = new Random();
+            foodChoice=foodChoices[(int)(4*random.nextDouble())];
+            setFoodText();
         }
 
         private void getCustomFood() {
@@ -664,6 +783,8 @@ public class SelectionFragment extends Fragment {
         private void setFoodText() {
             if (foodChoice != null && foodChoice.length() > 0) {
                 setText2(foodChoice);
+                typeSend=foodChoice;
+                change();
                 //announceButton.setEnabled(true);
                 //messageButton.setEnabled(true);
             } else {
@@ -676,15 +797,21 @@ public class SelectionFragment extends Fragment {
 
     private class PeopleListElement extends BaseListElement {
 
-        private static final String FRIENDS_KEY = "friends";
+        private static final String RATING_KEY = "rating";
+        private static final String RATING_URL_KEY = "food_url";
 
-        private List<JSONObject> selectedUsers;
+        private final String[] ratingChoices;
+        private final String[] ratingUrls;
+        private String ratingChoiceUrl = null;
+        private String ratingChoice = null;
 
         public PeopleListElement(int requestCode) {
             super(getActivity().getResources().getDrawable(R.drawable.add_friends),
-                    getActivity().getResources().getString(R.string.action_people),
+                    getActivity().getResources().getString(R.string.action_rating),
                     null,
                     requestCode);
+            ratingChoices = getActivity().getResources().getStringArray(R.array.rating_types);
+            ratingUrls = getActivity().getResources().getStringArray(R.array.rating_og_urls);
         }
 
         @Override
@@ -692,118 +819,237 @@ public class SelectionFragment extends Fragment {
             return new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if (AccessToken.getCurrentAccessToken() != null) {
-                        startPickerActivity(PickerActivity.FRIEND_PICKER, getRequestCode());
-                    } else {
-                        activity.showSplashFragment();
-                    }
+                    showMealOptions();
                 }
             };
         }
 
         @Override
-        protected void onActivityResult(Intent data) {
-            selectedUsers = ((ScrumptiousApplication) getActivity().getApplication())
-                    .getSelectedUsers();
-            setUsersText();
-            notifyDataChanged();
-        }
-
-        @Override
         protected void populateOpenGraphAction(ShareOpenGraphAction.Builder actionBuilder) {
-            if (selectedUsers != null && !selectedUsers.isEmpty()) {
-                String tags = "";
-                for (JSONObject user : selectedUsers) {
-                    tags += "," + user.optString("id");
+            if (ratingChoice != null && ratingChoice.length() > 0) {
+                if (ratingChoiceUrl != null && ratingChoiceUrl.length() > 0) {
+                    actionBuilder.putString("Rating", ratingChoiceUrl);
+                } else {
+                    ShareOpenGraphObject mealObject = new ShareOpenGraphObject.Builder()
+                            .putString("og:type", MEAL_OBJECT_TYPE)
+                            .putString("og:title", ratingChoice)
+                            .build();
+                    actionBuilder.putObject("meal", mealObject);
                 }
-                tags = tags.substring(1);
-                actionBuilder.putString("tags", tags);
             }
         }
 
         @Override
         protected void onSaveInstanceState(Bundle bundle) {
-            if (selectedUsers != null) {
-                bundle.putByteArray(FRIENDS_KEY, getByteArray(selectedUsers));
+            if (ratingChoice != null && ratingChoiceUrl != null) {
+                bundle.putString(RATING_KEY, ratingChoice);
+                bundle.putString(RATING_URL_KEY, ratingChoiceUrl);
             }
         }
 
         @Override
         protected boolean restoreState(Bundle savedState) {
-            byte[] bytes = savedState.getByteArray(FRIENDS_KEY);
-            if (bytes != null) {
-                selectedUsers = restoreByteArray(bytes);
-                setUsersText();
+            String rating = savedState.getString(RATING_KEY);
+            String ratingUrl = savedState.getString(RATING_URL_KEY);
+            if (rating != null && ratingUrl != null) {
+                ratingChoice = rating;
+                ratingChoiceUrl = ratingUrl;
+                setRatingText();
                 return true;
             }
             return false;
         }
 
-        private void setUsersText() {
-            String text = null;
-            if (selectedUsers != null) {
-                if (selectedUsers.size() == 1) {
-                    text = String.format(getResources().getString(R.string.single_user_selected),
-                            selectedUsers.get(0).optString("name"));
-                } else if (selectedUsers.size() == 2) {
-                    text = String.format(getResources().getString(R.string.two_users_selected),
-                            selectedUsers.get(0).optString("name"),
-                            selectedUsers.get(1).optString("name"));
-                } else if (selectedUsers.size() > 2) {
-                    text = String.format(getResources().getString(R.string.multiple_users_selected),
-                            selectedUsers.get(0).optString("name"), (selectedUsers.size() - 1));
-                }
-            }
-            if (text == null) {
-                text = getResources().getString(R.string.action_people_default);
-            }
-            setText2(text);
+        private void showMealOptions() {
+            String title = getActivity().getResources().getString(R.string.select_meal);
+            AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+            builder.setTitle("Pick a rating range").
+                    setCancelable(true).
+                    setItems(ratingChoices, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            ratingChoiceUrl = ratingUrls[i];
+                            if (ratingChoiceUrl.length() == 0) {
+                                getCustomRating();
+                            } else {
+                                ratingChoice = ratingChoices[i];
+                                setRatingText();
+                                notifyDataChanged();
+                            }
+                        }
+                    });
+            builder.show();
         }
 
-        private byte[] getByteArray(List<JSONObject> users) {
-            // convert the list of GraphUsers to a list of String where each element is
-            // the JSON representation of the GraphUser so it can be stored in a Bundle
-            List<String> usersAsString = new ArrayList<String>(users.size());
+        private void getCustomRating() {
+            String title = getActivity().getResources().getString(R.string.enter_meal);
+            final EditText input = new EditText(getActivity());
 
-            for (JSONObject user : users) {
-                usersAsString.add(user.toString());
-            }
-            try {
-                ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-                new ObjectOutputStream(outputStream).writeObject(usersAsString);
-                return outputStream.toByteArray();
-            } catch (IOException e) {
-                Log.e(TAG, "Unable to serialize users.", e);
-            }
-            return null;
+            AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+            builder.setTitle(title)
+                    .setCancelable(true)
+                    .setView(input)
+                    .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            ratingChoice = input.getText().toString();
+                            setRatingText();
+                            notifyDataChanged();
+                        }
+                    })
+                    .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                        }
+                    });
+            AlertDialog dialog = builder.create();
+            // always popup the keyboard when the alert dialog shows
+            dialog.getWindow().setSoftInputMode(
+                    WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE);
+            dialog.show();
         }
 
-        private List<JSONObject> restoreByteArray(byte[] bytes) {
-            try {
-                @SuppressWarnings("unchecked")
-                List<String> usersAsString =
-                        (List<String>) (new ObjectInputStream(
-                                new ByteArrayInputStream(bytes))).readObject();
-                if (usersAsString != null) {
-                    List<JSONObject> users = new ArrayList<JSONObject>(usersAsString.size());
-                    for (String user : usersAsString) {
-                        users.add(new JSONObject(user));
-                    }
-                    return users;
-                }
-            } catch (ClassNotFoundException e) {
-                Log.e(TAG, "Unable to deserialize users.", e);
-            } catch (IOException e) {
-                Log.e(TAG, "Unable to deserialize users.", e);
-            } catch (JSONException e) {
-                Log.e(TAG, "Unable to deserialize users.", e);
+        private void setRatingText() {
+            if (ratingChoice != null && ratingChoice.length() > 0) {
+                setText2(ratingChoice);
+                ratingSend=ratingChoice;
+                //announceButton.setEnabled(true);
+                //messageButton.setEnabled(true);
+            } else {
+                setText2(getActivity().getResources().getString(R.string.action_eating_default));
+                //announceButton.setEnabled(false);
+                //messageButton.setEnabled(false);
             }
-            return null;
         }
     }
 
     private class LocationListElement extends BaseListElement {
-        private static final String PLACE_KEY = "place";
+        private static final String COST_KEY = "cost";
+        private static final String COST_URL_KEY = "food_url";
+
+        private final String[] costChoices;
+        private final String[] costUrls;
+        private String costChoiceUrl = null;
+        private String costChoice = null;
+
+        public LocationListElement(int requestCode) {
+            super(getActivity().getResources().getDrawable(R.drawable.add_location),
+                    getActivity().getResources().getString(R.string.action_cost),
+                    null,
+                    requestCode);
+            costChoices = getActivity().getResources().getStringArray(R.array.cost_types);
+            costUrls = getActivity().getResources().getStringArray(R.array.cost_og_urls);
+        }
+
+        @Override
+        protected View.OnClickListener getOnClickListener() {
+            return new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    showMealOptions();
+                }
+            };
+        }
+
+        @Override
+        protected void populateOpenGraphAction(ShareOpenGraphAction.Builder actionBuilder) {
+            if (costChoice != null && costChoice.length() > 0) {
+                if (costChoiceUrl != null && costChoiceUrl.length() > 0) {
+                    actionBuilder.putString("Cost", costChoiceUrl);
+                } else {
+                    ShareOpenGraphObject mealObject = new ShareOpenGraphObject.Builder()
+                            .putString("og:type", MEAL_OBJECT_TYPE)
+                            .putString("og:title", costChoice)
+                            .build();
+                    actionBuilder.putObject("meal", mealObject);
+                }
+            }
+        }
+
+        @Override
+        protected void onSaveInstanceState(Bundle bundle) {
+            if (costChoice != null && costChoiceUrl != null) {
+                bundle.putString(COST_KEY, costChoice);
+                bundle.putString(COST_URL_KEY, costChoiceUrl);
+            }
+        }
+
+        @Override
+        protected boolean restoreState(Bundle savedState) {
+            String cost = savedState.getString(COST_KEY);
+            String costUrl = savedState.getString(COST_URL_KEY);
+            if (cost != null && costUrl != null) {
+                costChoice = cost;
+                costChoiceUrl = costUrl;
+                setCostText();
+                return true;
+            }
+            return false;
+        }
+
+        private void showMealOptions() {
+            String title = getActivity().getResources().getString(R.string.select_meal);
+            AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+            builder.setTitle("Pick a price range").
+                    setCancelable(true).
+                    setItems(costChoices, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            costChoiceUrl = costUrls[i];
+                            if (costChoiceUrl.length() == 0) {
+                                getCustomCost();
+                            } else {
+                                costChoice = costChoices[i];
+                                setCostText();
+                                notifyDataChanged();
+                            }
+                        }
+                    });
+            builder.show();
+        }
+
+        private void getCustomCost() {
+            String title = getActivity().getResources().getString(R.string.enter_meal);
+            final EditText input = new EditText(getActivity());
+
+            AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+            builder.setTitle(title)
+                    .setCancelable(true)
+                    .setView(input)
+                    .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            costChoice = input.getText().toString();
+                            setCostText();
+                            notifyDataChanged();
+                        }
+                    })
+                    .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                        }
+                    });
+            AlertDialog dialog = builder.create();
+            // always popup the keyboard when the alert dialog shows
+            dialog.getWindow().setSoftInputMode(
+                    WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE);
+            dialog.show();
+        }
+
+        private void setCostText() {
+            if (costChoice != null && costChoice.length() > 0) {
+                setText2(costChoice);
+                costSend=costChoice;
+                //announceButton.setEnabled(true);
+                //messageButton.setEnabled(true);
+            } else {
+                setText2(getActivity().getResources().getString(R.string.action_eating_default));
+                //announceButton.setEnabled(false);
+                //messageButton.setEnabled(false);
+            }
+        }
+
+        /*private static final String PLACE_KEY = "place";
 
         private JSONObject selectedPlace = null;
 
@@ -874,12 +1120,204 @@ public class SelectionFragment extends Fragment {
                 text = getResources().getString(R.string.action_location_default);
             }
             setText2(text);
-        }
+        }*/
 
     }
 
     private class PhotoListElement extends BaseListElement {
-        private static final int CAMERA = 0;
+
+        private static final String FOOD_KEY = "food";
+        private static final String FOOD_URL_KEY = "food_url";
+
+        private String[] foodChoices;
+        private final String[] foodUrls;
+        private String foodChoiceUrl = null;
+        private String foodChoice = null;
+
+        public PhotoListElement(int requestCode) {
+            super(getActivity().getResources().getDrawable(R.drawable.add_photo),
+                    getActivity().getResources().getString(R.string.action_subtype),
+                    null,
+                    requestCode);
+            if(typeSend==null)
+            {
+                Log.d("changes","typeSend");
+                foodChoices = getActivity().getResources().getStringArray(R.array.sub_types1);
+            }
+            else
+            {
+                Log.d("changes",typeSend);
+                if(typeSend.charAt(0)=='R')
+                {
+                    foodChoices = getActivity().getResources().getStringArray(R.array.sub_types1);
+                }
+                if(typeSend.charAt(1)=='l')
+                {
+                    foodChoices = getActivity().getResources().getStringArray(R.array.sub_types2);
+                }
+                if(typeSend.charAt(0)=='M')
+                {
+                    foodChoices = getActivity().getResources().getStringArray(R.array.sub_types3);
+                }
+                if(typeSend.charAt(0)=='S')
+                {
+                    foodChoices = getActivity().getResources().getStringArray(R.array.sub_types4);
+                }
+                if(typeSend.charAt(1)=='h')
+                {
+                    foodChoices = getActivity().getResources().getStringArray(R.array.sub_types5);
+                }
+            }
+
+            foodUrls = getActivity().getResources().getStringArray(R.array.sub_og_urls);
+        }
+
+        @Override
+        protected View.OnClickListener getOnClickListener() {
+            return new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    showMealOptions();
+                }
+            };
+        }
+
+        @Override
+        protected void populateOpenGraphAction(ShareOpenGraphAction.Builder actionBuilder) {
+            if (foodChoice != null && foodChoice.length() > 0) {
+                if (foodChoiceUrl != null && foodChoiceUrl.length() > 0) {
+                    actionBuilder.putString("meal", foodChoiceUrl);
+                } else {
+                    ShareOpenGraphObject mealObject = new ShareOpenGraphObject.Builder()
+                            .putString("og:type", MEAL_OBJECT_TYPE)
+                            .putString("og:title", foodChoice)
+                            .build();
+                    actionBuilder.putObject("meal", mealObject);
+                }
+            }
+        }
+
+        @Override
+        protected void onSaveInstanceState(Bundle bundle) {
+            if (foodChoice != null && foodChoiceUrl != null) {
+                bundle.putString(FOOD_KEY, foodChoice);
+                bundle.putString(FOOD_URL_KEY, foodChoiceUrl);
+            }
+        }
+
+        @Override
+        protected boolean restoreState(Bundle savedState) {
+            String food = savedState.getString(FOOD_KEY);
+            String foodUrl = savedState.getString(FOOD_URL_KEY);
+            if (food != null && foodUrl != null) {
+                foodChoice = food;
+                foodChoiceUrl = foodUrl;
+                setFoodText();
+                return true;
+            }
+            return false;
+        }
+
+        private void showMealOptions() {
+            String title = getActivity().getResources().getString(R.string.select_meal);
+            AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+            /*if(typeSend==null)
+            {
+                Log.d("typeSend","no");
+                foodChoices = getActivity().getResources().getStringArray(R.array.sub_types1);
+            }
+            else
+            {
+                if(typeSend=="Restaurant")
+                {
+                    foodChoices = getActivity().getResources().getStringArray(R.array.sub_types1);
+                }
+                if(typeSend=="Club")
+                {
+                    foodChoices = getActivity().getResources().getStringArray(R.array.sub_types2);
+                }
+                if(typeSend=="Movie")
+                {
+                    foodChoices = getActivity().getResources().getStringArray(R.array.sub_types3);
+                }
+                if(typeSend=="Sport")
+                {
+                    foodChoices = getActivity().getResources().getStringArray(R.array.sub_types4);
+                }
+                if(typeSend=="Chilling")
+                {
+                    foodChoices = getActivity().getResources().getStringArray(R.array.sub_types5);
+                }
+                notifyDataChanged();
+            }*/
+            builder.setTitle("Pick a subtype").
+                    setCancelable(true).
+                    setItems(foodChoices, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            foodChoiceUrl = foodUrls[i];
+                            if (foodChoiceUrl.length() == 0) {
+                                //getCustomFood();
+                                surpriseMe();
+                            } else {
+                                foodChoice = foodChoices[i];
+                                setFoodText();
+                                //notifyDataChanged();
+                            }
+                        }
+                    });
+            builder.show();
+        }
+
+        private void surpriseMe()
+        {
+            Random random = new Random();
+            foodChoice=foodChoices[(int)(2*random.nextDouble())];
+            setFoodText();
+        }
+
+        private void getCustomFood() {
+            String title = getActivity().getResources().getString(R.string.enter_meal);
+            final EditText input = new EditText(getActivity());
+
+            AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+            builder.setTitle(title)
+                    .setCancelable(true)
+                    .setView(input)
+                    .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            foodChoice = input.getText().toString();
+                            setFoodText();
+                            notifyDataChanged();
+                        }
+                    })
+                    .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                        }
+                    });
+            AlertDialog dialog = builder.create();
+            // always popup the keyboard when the alert dialog shows
+            dialog.getWindow().setSoftInputMode(
+                    WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE);
+            dialog.show();
+        }
+
+        private void setFoodText() {
+            if (foodChoice != null && foodChoice.length() > 0) {
+                setText2(foodChoice);
+                subtypeSend=foodChoice;
+                //announceButton.setEnabled(true);
+                //messageButton.setEnabled(true);
+            } else {
+                setText2(getActivity().getResources().getString(R.string.action_eating_default));
+                //announceButton.setEnabled(false);
+                //messageButton.setEnabled(false);
+            }
+        }
+
+        /*private static final int CAMERA = 0;
         private static final int GALLERY = 1;
         private static final String PHOTO_URI_KEY = "photo_uri";
         private static final String TEMP_URI_KEY = "temp_uri";
@@ -999,7 +1437,7 @@ public class SelectionFragment extends Fragment {
                     Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES),
                     imgFileName);
             return Uri.fromFile(image);
-        }
+        }*/
     }
 
     private class ActionListAdapter extends ArrayAdapter<BaseListElement> {

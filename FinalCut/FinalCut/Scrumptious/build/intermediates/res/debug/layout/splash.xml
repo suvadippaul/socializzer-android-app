@@ -24,7 +24,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    android:background="#FB5820" >
+    android:background="#000000" >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -37,7 +37,7 @@
     		android:layout_weight="1"
     		android:layout_gravity="center"
     		android:padding="50dp"
-    		android:src="@drawable/logo"/>
+    		android:src="@drawable/socializzer_logo"/>
 
         <com.facebook.login.widget.LoginButton
             android:id="@+id/login_button"
@@ -61,4 +61,4 @@
 
     </LinearLayout>
 </ScrollView>
-<!-- From: file:/home/suvadip/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/res/layout/splash.xml -->
+<!-- From: file:/home/shreyas/FinalCut/FinalCut/Scrumptious/res/layout/splash.xml -->

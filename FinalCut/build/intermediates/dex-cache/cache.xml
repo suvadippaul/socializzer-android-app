@@ -2,193 +2,193 @@
 <items version="2" >
 
     <item
-        jar="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.0.0/classes.jar"
+        jar="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.0.0/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="fb04b12526b0073c7fb1ebb70c5842d82ee95596">
-        <dex dex="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-1b0a270e8db7230aaeac52701a93031126499a81.jar" />
+        sha1="7ff613bf78ab057293892fdbd4169eda899c89b9">
+        <dex dex="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-9bb14fdb7ff2363b8b9b574cb13ab90d8dfdb603.jar" />
     </item>
     <item
-        jar="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.0.0/classes.jar"
+        jar="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.0.0/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="17f8750d5c0749e44dd7c54aa390d9c937803825">
-        <dex dex="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-1c8bbdece9f01e80fd1c0ef040d257545f2228d4.jar" />
+        sha1="29fd6d3794b71491c2789708cd8d03c71feb8954">
+        <dex dex="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-1575a10bc2ea44dcca1b148ee276d3cd11447593.jar" />
     </item>
     <item
-        jar="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.0.0/classes.jar"
+        jar="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.0.0/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="a08d65794b844d8e7540bf9a33859bf3b2482d7f">
-        <dex dex="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-7b0f0030a96b2487887897af255b85cf225f97b9.jar" />
+        sha1="0e8228b4bc69c6a2c8d7c18498a77e53417d2574">
+        <dex dex="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-a90472faedda5b253762997a7be478415eec0a30.jar" />
     </item>
     <item
-        jar="/home/shreyas/Downloads/android-sdk-linux/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
+        jar="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.0.0/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
-        <dex dex="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-00cd1f9797fde18c56efa6b4342725b972908c20.jar" />
+        sha1="e3d791b42eaa90416cd0b2d2e608092794a3baa4">
+        <dex dex="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-c531147b59b2b3dd58dc75590824e28e57782b79.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="055783146ba9654a725442563be78cad303aad1f">
+        <dex dex="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-8519da1addc24ef018d24b821564e473ce6efd2d.jar" />
     </item>
     <item
         jar="/home/shreyas/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.1.4/129874135e6081269ace2312092031558865de12/bolts-android-1.1.4.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="129874135e6081269ace2312092031558865de12">
-        <dex dex="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/bolts-android-1.1.4-f67e3b6866082d58270a5bbfb2898d0e847413eb.jar" />
+        <dex dex="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/bolts-android-1.1.4-f67e3b6866082d58270a5bbfb2898d0e847413eb.jar" />
     </item>
     <item
-        jar="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.0.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="3c0b099f9de16b265ecd6122fcb603e7d0d29f90">
-        <dex dex="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-9ee8f9a79851898854614a38afe5e61d05a4585b.jar" />
-    </item>
-    <item
-        jar="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.0.0/classes.jar"
+        jar="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.0.0/classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="73ccb92b70112f2e463e415ef8d7275de7da6516">
-        <dex dex="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-9cbe165c57b09209c0bc1474c0c1786d56135eac.jar" />
+        <dex dex="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-bf0895db1622b8a838b465b40c094524f61e2e62.jar" />
     </item>
     <item
-        jar="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.0.0/classes.jar"
+        jar="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.0.0/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="41b3870cbe5fa546d8095b5b89d42cb69f3dd175">
-        <dex dex="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-a6a626be3d8bfd3e40adf122b939ffbdcecb797e.jar" />
+        sha1="a08d65794b844d8e7540bf9a33859bf3b2482d7f">
+        <dex dex="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-99da259880714411c1daa13d25fa1620d73c2bb0.jar" />
     </item>
     <item
-        jar="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.0.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="9224bc4c54ba95147c7eabd874573763c07cb6be">
-        <dex dex="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-83f26dad9391754101c5f7bca3656931c206a04a.jar" />
-    </item>
-    <item
-        jar="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.0.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="0e8228b4bc69c6a2c8d7c18498a77e53417d2574">
-        <dex dex="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-628984e3c7382c1a726191bcc26ff31f6482bb00.jar" />
-    </item>
-    <item
-        jar="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
-        <dex dex="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-1c84b1e2a0d026858e5a5ca3ad92e953bb3f9cbf.jar" />
-    </item>
-    <item
-        jar="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.android.support/support-v13/22.0.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="7f9cca1caa023a880b00c382bcc5c90245ae4895">
-        <dex dex="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-e60c0bdc7d031ebf1bffca2ebce7f756866eb884.jar" />
-    </item>
-    <item
-        jar="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.0.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="7ff613bf78ab057293892fdbd4169eda899c89b9">
-        <dex dex="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-1d56391efddc4b5c849cee8426e2199a0421ac40.jar" />
-    </item>
-    <item
-        jar="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.0.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="1c5a76debf0c2857ccad422c4a80ed785982f8df">
-        <dex dex="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-47d796d39eaa25d71f90c7d51190102c02431d36.jar" />
-    </item>
-    <item
-        jar="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.0.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="3033cc3a2c68dff3e5b646d6d084bdbdf7d00b25">
-        <dex dex="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-a756dc8b767eccc7c9835b725ddf7ff5afe2dc20.jar" />
-    </item>
-    <item
-        jar="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.facebook.android/facebook/4.0.1/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="6de4bc43864bd189dca09d12810933ca5bc2eea5">
-        <dex dex="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-689be3cbece9d2a475d598940108ad3fce965388.jar" />
-    </item>
-    <item
-        jar="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.0.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="ef5f051e7308febe289dc93c67c5f32785b4260a">
-        <dex dex="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-d8cf67459015605984a912ea71553c3caee0ef99.jar" />
-    </item>
-    <item
-        jar="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.android.support/support-v13/22.0.0/libs/internal_impl-22.0.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="def3eff2b7b4774d96ae15b07b3fc0111edbfe24">
-        <dex dex="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-811bc0095a9faf4f364bb7d53bd5c8b0c8b12f0b.jar" />
-    </item>
-    <item
-        jar="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
-        <dex dex="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-3a415444745206f8b1378f89db8a7b0d5e6013e3.jar" />
-    </item>
-    <item
-        jar="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.0.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="c976518693e89ad44fbfccfc654941eaec198d08">
-        <dex dex="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-8ab6812f088f62199e576f417c0d0683646cf72b.jar" />
-    </item>
-    <item
-        jar="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
-        <dex dex="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-3b368024dc5cc7a9e4d89611e6c180c299f3af03.jar" />
-    </item>
-    <item
-        jar="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.0.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="4cd0b093824b3228fffc21ea369b98d0b1db6566">
-        <dex dex="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-2c7e2fe9fd0814fdc98594c55ab2364e27463dc8.jar" />
-    </item>
-    <item
-        jar="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="4c93d99d454c975536bbe3b42283eee847f03ea3">
-        <dex dex="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-3fd0512157c4e5ff353a21506bd3ddc47cb7eafb.jar" />
-    </item>
-    <item
-        jar="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.0.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="e3d791b42eaa90416cd0b2d2e608092794a3baa4">
-        <dex dex="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-9ac168cbd38975c6ac419da70b39595130b70e1b.jar" />
-    </item>
-    <item
-        jar="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/7.0.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="055783146ba9654a725442563be78cad303aad1f">
-        <dex dex="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-4af4e3ad365e90ee6940a36ce8ec1e2a6dfe02aa.jar" />
-    </item>
-    <item
-        jar="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.0.0/classes.jar"
+        jar="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.0.0/classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="a96b762bde4139de855735f175ec4d17dca55a6d">
-        <dex dex="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-20b7b7067658ef76afae0cb6a35051d96e8f2aaf.jar" />
+        <dex dex="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-d1f11ace88c8c1c3bd3c0afe6e1502170fb08b57.jar" />
     </item>
     <item
-        jar="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.0.0/classes.jar"
+        jar="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.0.0/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="29fd6d3794b71491c2789708cd8d03c71feb8954">
-        <dex dex="/home/shreyas/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-20287190bd8fb75df12b1115ad5605b6dbb5f51e.jar" />
+        sha1="1c5a76debf0c2857ccad422c4a80ed785982f8df">
+        <dex dex="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-dfa9b74355f894cd9fd81742edb6881baaa4beec.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-048f5c56ce2e6d7f6d372f95241a61dd3b1784aa.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ef5f051e7308febe289dc93c67c5f32785b4260a">
+        <dex dex="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-94f00548bdb72013469b2f07d82368c52e817313.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="41b3870cbe5fa546d8095b5b89d42cb69f3dd175">
+        <dex dex="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-c79ec9a53c0a1a81af8edbc1b3fa324d0194a8a1.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/Downloads/android-sdk-linux/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-00cd1f9797fde18c56efa6b4342725b972908c20.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c976518693e89ad44fbfccfc654941eaec198d08">
+        <dex dex="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-22f1688232b2af7806088fc5ad8c7f935ae5d0a4.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="fb04b12526b0073c7fb1ebb70c5842d82ee95596">
+        <dex dex="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-4e1afea074a4941e28a786937e1dbc86382a56be.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9224bc4c54ba95147c7eabd874573763c07cb6be">
+        <dex dex="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-7f2d92157b5e0678fefe1bd48edcd3bc44cd7aa2.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3033cc3a2c68dff3e5b646d6d084bdbdf7d00b25">
+        <dex dex="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-1cf0475d61dbd0b0a61ef8d6df954aa7b2f59062.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-3a04155c1b5557e6d674b179e54a25ce9d3aaad6.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4cd0b093824b3228fffc21ea369b98d0b1db6566">
+        <dex dex="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-858d0d07798487825fe5ec99cc406787878213f1.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.facebook.android/facebook/4.0.1/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="12620f70412a908b6e676809ef4dcc5efe4cded8">
+        <dex dex="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-ab229a1a8e6eeb80eb54a03b582b798a19063e80.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3c0b099f9de16b265ecd6122fcb603e7d0d29f90">
+        <dex dex="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-dfa9dbacc9417fadb16051fd8c7fd7f9a0244f47.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-b4d66bda71b95b477a97da58824af329eea92ae2.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4c93d99d454c975536bbe3b42283eee847f03ea3">
+        <dex dex="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-1d248e5fe066703476cb690c784f5f5d1270c57b.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.android.support/support-v13/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="7f9cca1caa023a880b00c382bcc5c90245ae4895">
+        <dex dex="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-e837eac69c36938f4b133524b9e9425c25fa8edb.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.android.support/support-v13/22.0.0/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="def3eff2b7b4774d96ae15b07b3fc0111edbfe24">
+        <dex dex="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-54c2808ceb255730de38b58af684431bc53123e8.jar" />
+    </item>
+    <item
+        jar="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="17f8750d5c0749e44dd7c54aa390d9c937803825">
+        <dex dex="/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/pre-dexed/debug/classes-d6c710d9d8bb75608f9a26e260913719572378cd.jar" />
     </item>
 
 </items>

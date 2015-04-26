@@ -35,11 +35,13 @@ public class Events2 extends ActionBarActivity implements ActionBar.TabListener 
      * The {@link ViewPager} that will host the section contents.
      */
     ViewPager mViewPager;
-
+    public static Person p;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_events2);
+
+        p=(Person)this.getIntent().getBundleExtra("pref").getSerializable("person");
 
         // Set up the action bar.
         final ActionBar actionBar = getSupportActionBar();
@@ -169,8 +171,9 @@ public class Events2 extends ActionBarActivity implements ActionBar.TabListener 
         public static Fragment newInstance(int sectionNumber) {
             if(sectionNumber==1)
             {
-                PlaceholderFragment fragment = new PlaceholderFragment();
+                MyEvents fragment = new MyEvents();
                 Bundle args = new Bundle();
+                args.putSerializable("person",p);
                 args.putInt(ARG_SECTION_NUMBER, sectionNumber);
                 fragment.setArguments(args);
                 return fragment;

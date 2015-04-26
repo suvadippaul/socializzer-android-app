@@ -29,7 +29,7 @@
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:background="#00F"
+        android:background="#000000"
         android:fillViewport="true">
 
         <LinearLayout
@@ -66,4 +66,4 @@
 </LinearLayout>
 
 
-<!-- From: file:/home/suvadip/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/res/layout/selection.xml -->
+<!-- From: file:/home/shreyas/FinalCut/FinalCut/Scrumptious/res/layout/selection.xml -->

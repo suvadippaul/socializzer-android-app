@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/home/suvadip/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/res/values-hdpi/dimens.xml -->
+    <!-- From: file:/home/shreyas/FinalCut/FinalCut/Scrumptious/res/values-hdpi/dimens.xml -->
     <eat-comment/>
     <dimen name="picker_divider_width">1px</dimen>
-    <!-- From: file:/home/suvadip/Github/socializzer-android-app/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values-hdpi-v4/values.xml -->
+    <!-- From: file:/home/shreyas/FinalCut/FinalCut/Scrumptious/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values-hdpi-v4/values.xml -->
     <eat-comment/>
     <style name="Base.Widget.AppCompat.DrawerArrowToggle" parent="Base.Widget.AppCompat.DrawerArrowToggle.Common">
           <item name="barSize">18.66dp</item>
